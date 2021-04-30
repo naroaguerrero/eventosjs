@@ -372,8 +372,24 @@ for(let i = 0 ; i<newPerson.length; i++){
 document.getElementById("div2").innerHTML = parrafo;
 
 
-function busqueda() {
-  let seleccion3 = document.getElementById("entrada").value;
-
-  busqueda(seleccion3);
+function busqueda(texto) {
+  parrafo = "";
+  let encontrado = false;
+  for (let i = 0; i < newPerson.length; i++) {
+    if (newPerson[i].nombre.toLowerCase().includes(texto.toLowerCase())) {
+      encontrado = true;
+      parrafo += `
+    <div style="background-color: ${newPerson[i].ojos}" id="persona">
+      <img src="${newPerson[i].imagen}" />
+      <h1>${newPerson[i].nombre}</h1>
+      <p>${newPerson[i].edad}</p>
+      <p>${newPerson[i].email}</p>
+      <p>${newPerson[i].direccion}</p>
+    </div>`;
+    }
+  }
+  encontrado
+    ? (parrafo = parrafo)
+    : (parrafo = `<h1>ERROR!</h1><p>No se ha encontrado ningún resultado</p>`);
+  document.getElementById("div3").innerHTML = parrafo;
 }
