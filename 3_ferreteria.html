@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACME TOOLS</title>
+    <link rel="stylesheet" href="./3_ferreteria.css">
+  </head>
+  <body>
+    <header>
+      <div id="titulo">
+        <h1>CARPINTERÍA MAZARREDO</h1>
+      </div>
+      <div id="botonera">
+        <a href="">Inicio</a>
+        <a href="">Herramientas</a>
+        <a href="">Materiales</a>
+      </div>
+    </header>
+    <main>
+        <div id="catalogo">
+            <div id="brocha" class="producto">
+                <h2>Brocha</h2>
+                <h4>4,20€</h4>
+                <button onclick="juntoBrocha('mas')">+</button><button onclick="juntoBrocha('menos')">-</button>
+            </div>
+            <div id="llave" class="producto">
+                <h2>Llave</h2>
+                <h4>17,25€</h4>
+                <button onclick="juntoLlave('mas')">+</button><button onclick="juntoLlave('menos')">-</button>
+            </div>
+            <div id="martillo" class="producto">
+                <h2>Martillo</h2>
+                <h4>8,80€</h4>
+                <button onclick="juntoMartillo('mas')">+</button><button onclick="juntoMartillo('menos')">-</button>
+            </div>
+            <div id="tronco" class="producto">
+                <h2>Tronco</h2>
+                <h4>14,99€</h4>
+                <button onclick="juntoTronco('mas')">+</button><button onclick="juntoTronco('menos')">-</button>
+            </div>
+        </div>
+        <div id="cesta">
+        </div>
+
+
+    </main>
+    <footer>
+        <ul id="enlaces">
+            <li><a href="">Sobre nosotros</a></li>
+            <li><a href="">Preguntas frecuentes</a></li>
+            <li><a href="">Contacto</a></li>
+            <li><a href="">Cookies</a></li>
+        </ul>
+    
+    </footer>
+    <script src="./3_ferreteria.js"></script>
+  </body>
+</html>
+
+
